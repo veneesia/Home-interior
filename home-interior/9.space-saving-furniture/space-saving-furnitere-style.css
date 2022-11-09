@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+body{
+    width: 100vw;
+    height: 100%; 
+    background-color:antiquewhite;
+}
+.home{
+    height: 100%;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: #6D214F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+nav .logo{
+    height: 40px;
+    width: 130px;
+    margin-left: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: none;
+    font-size: 15px;
+    background-color: #B33771;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    border: 5px inset white;
+    user-select: none;
+    text-transform: capitalize;
+}
+nav .menus{
+    list-style: none;
+    display: flex;
+}
+nav .menus li{
+    padding: 10px; 
+}
+nav .menus li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.4s ease;
+    position: relative;
+}
+.menus li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.menus li a:hover::before{
+    width: 100%;
+}
+.space-saving-design::before{
+    display: none;
+}
+.menus .space-saving-design{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    color:#B33771;
+}
+.btn-est{
+    background-color: white;
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color:#6D214F;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.btn-est:hover{
+    color: white;
+    background-color: #B33771;
+    transform: scale(0.9);
+}
+.banner{
+    background-image: url('/9.space-saving-furniture/space-saving-furniture-images/bunk-beds-for-space-saving-furniture-794x1024.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    height: 300px;
+    width: 1300px;
+    margin-top: 100px;
+    margin-left: 30px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.banner p{
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    bottom: 40px;
+    left: 20px;
+    text-transform: capitalize;
+}
+.container{
+    min-height: 100px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.box .image{
+    height: 320px;
+    width: 100%;
+}
+.box .image img{
+    height: 320px;
+    width: 100%;
+}
+.box .content{
+    position: relative;
+    background-color:#6D214F;
+    height: 80px;
+}
+.box .content h1{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 20px;
+    color: white;
+    font-weight: normal;
+    overflow: hidden;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.overlay{
+    position: absolute;
+    height: 0;
+    width: 400px;
+    left: 0;
+    right:0;
+    bottom: 0;   
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    background-color: rgba(109,33,79);
+}
+.overlay-text{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box:hover .overlay{
+    opacity: 0.6; 
+    height: 400px;
+    cursor: pointer;
+}
+.box-instant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(109,33,79,0.7);
+}
+.box-instant img{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+.box-instant h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 19px;
+    color: white; 
+    padding: 20px;    
+}
+.box-instant h3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 10px 40px;
+    color: white;    
+}
+.box-instant .button-instant{
+    height: 30px;
+    width: 100px;    
+    margin-top: 30px;
+    background-color: #6D214F;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin-top: 50px;
+    padding-top: 80px;
+    position: relative;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.service p{
+    position: absolute;
+    margin-top: -380px;
+    color: #6D214F;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration-line:underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+.service .service-box{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: rgba(109,33,79,0.7);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.service-box img{
+    margin-left: 100px;
+    margin-top: 40px;    
+}
+.service-box h4{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+.service-box h5{
+    text-align: center;
+    padding: 6px;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+}
+.dream{
+    border-top: 0.05px solid #6D214F;
+}
+.dream h2{
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 50px;
+    font-size: 25px;
+    user-select: none;
+    color: #6D214F;
+}
+.dream p{
+    padding: 30px;
+    text-align: justify;
+    font-size: 12px;
+    word-spacing: 5px;
+    line-height: 25px;
+    padding: 25px;
+    text-indent: 140px;
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+    user-select: none;
+    color: #6D214F;
+    border-bottom: 1px solid #6D214F;
+}

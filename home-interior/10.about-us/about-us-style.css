@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Frank Ruhl Libre', serif;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(109,33,79,0.6),rgba(109,33,79,0.6)),url('/2.living-room/living-room-images/Hilton-West-Palm-Beach.jpg');
+    background-size: cover; 
+}
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: #6D214F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+nav .logo,
+.footer-box .logo{
+    height: 40px;
+    width: 130px;
+    margin-left: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: none;
+    font-size: 15px;
+    background-color: #B33771;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    border: 5px inset white;
+    user-select: none;
+    text-transform: capitalize;
+}
+nav .menus{
+    list-style: none;
+    display: flex;
+}
+nav .menus li{
+    padding: 10px; 
+}
+nav .menus li a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    user-select: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s ease;
+    position: relative;
+}
+.menus li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.menus li a:hover::before{
+    width: 100%;
+}
+.about-us-design::before{
+    display: none;
+}
+.menus .about-us-design{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    color:#B33771;
+}
+.btn-est{
+    background-color: white;
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color:#6D214F;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.btn-est:hover{
+    color: white;
+    background-color: #B33771;
+    transform: scale(0.9);
+}
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 40px;
+    background-color: antiquewhite;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;    
+}
+.about-box{
+    height: 400px;
+    width: 600px;
+    margin: 20px;
+    
+}
+.about-us h1{
+    color: #6D214F;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+.about-us p{
+    text-align: justify; 
+    padding: 0 30px;
+    font-size: 12px;
+    line-height: 20px;
+    word-spacing: 1px;
+    color: #6D214F;
+    text-indent: 100px; 
+}
+.about-us .learn{
+    height: 35px;
+    width: 130px;
+    margin: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: capitalize;
+    background-color: #6D214F;
+    transition: 0.5s ease;
+}
+.about-us .learn:hover{
+    border: 1px solid #6D214F;
+    color: #6D214F;
+    border-radius: 3px;
+    background-color: antiquewhite; 
+}
+.about-us img{
+    height: 400px;
+    width: 500px;
+    margin-left: 50px;
+}

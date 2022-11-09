@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    background-image:linear-gradient(rgba(109,33,79,0.6),rgba(109,33,79,0.6)),url('/2.living-room/living-room-images/jennpablo-beach-vibe-living-room.png');
+    background-size: cover;
+}
+.home{
+    height: 100%;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: #6D214F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;  
+    top:0;
+    z-index: 1;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+nav .logo{
+    height: 40px;
+    width: 130px;
+    margin-left: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: none;
+    font-size: 15px;
+    background-color: #B33771;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    border: 5px inset white;
+    user-select: none;
+    text-transform: capitalize;
+}
+nav .menus{
+    list-style: none;
+    display: flex;
+}
+nav .menus li{
+    padding: 10px; 
+}
+nav .menus li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.4s ease;
+    position: relative;
+}
+.menus li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.menus li a:hover::before{
+    width: 100%;
+}
+.contact-us-design::before{
+    display: none;
+}
+.menus .contact-us-design{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    color:#B33771;
+}
+.btn-est{
+    background-color: white;
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color:#6D214F;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.btn-est:hover{
+    color: white;
+    background-color: #B33771;
+    transform: scale(0.9);
+}
+/*
+.design-form-group{
+    background-color: #6D214F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    height: 400px;
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.design-form-group h2{
+    color: white;
+    text-transform: uppercase;
+    margin-top: -50px;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 20px;  
+}
+.design-form-group input{
+    margin: 10px;
+    height: 30px;
+    width: 230px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    border-radius: 20px;
+    color:#6D214F;
+}
+.design-form-group .book-button{
+    height: 35px;
+    width: 180px;
+    margin: 10px;
+    border: none;
+    outline:none;
+    color: white;
+    background-color:#B33771;
+    font-size: 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+.design-form-group .book-button:hover{
+    color:#6D214F;
+    background-color: white;
+    transform: scale(0.9);
+}
+*/
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 400px;
+    width: 750px;
+    margin-left: 350px;
+    margin-top: 50px;
+    background-color: rgba(109,33,79,0.8);
+}
+.contact{
+    height: 400px;
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.contact h1{
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px;
+    padding: 10px;
+}
+.contact h2{
+    color: antiquewhite;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+.contact input{
+    padding: 2px;
+    height: 32px;
+    width: 150px;
+    margin: 12px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-left: 30px;
+    color: #6D214F;
+}
+.contact textarea{
+    margin-left: 30px;
+    height: 100px;
+    width: 345px;
+    resize: none;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #6D214F;
+    position: relative;
+}
+.button-submit{
+    position: absolute;
+    margin-left: -345px;
+    margin-top: 120px;
+    width: 110px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: white;
+    background-color:#B33771;
+    transition: 0.5s ease;
+}
+.button-submit:hover{
+    color: #6D214F;
+    background-color: antiquewhite;
+}
+.details{
+    height: 300px;
+    width: 300px;
+    margin-left: -100px;
+    margin-top: 10px;
+    color: white;  
+    position: relative; 
+}
+.details h3{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: normal;
+}
+.details p{
+     font-size: 12px;
+     padding-left: 15px;
+     line-height: 20px;
+}
+.details h4{
+    font-size: 15px;
+    font-weight: normal;
+    padding: 15px;
+}
+.details h5{
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 15px;
+}
+.details span{
+    font-size: 16px;
+    line-height: 40px;
+}
+.details h6{
+    font-size: 15px;
+    font-weight: normal;
+    padding: 15px;
+}
+.social{
+    width: 200px;
+    margin-left: 810px;
+    margin-top: 350px;
+    position: absolute;
+}
+.facebook,
+.instagram,
+.twitter,
+.youtube{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #B33771;
+    color:white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.4s ease;
+}
+.social .facebook:hover{
+    color: #6D214F;
+}
+.instagram:hover{
+    color: #6D214F;
+}
+.twitter:hover{
+    color: #6D214F;
+}
+.youtube:hover{
+    color: #6D214F;
+}
